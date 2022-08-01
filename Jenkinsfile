@@ -5,7 +5,7 @@ pipeline {
         stage('CD') {
             steps {
                 script {
-                      sh 'kubectl apply -Rf ./app'
+                      sh 'kubectl apply -Rf ./hello-app'
                 }
             }
         }
